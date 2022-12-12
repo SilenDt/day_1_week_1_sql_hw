@@ -75,6 +75,8 @@ SELECT * FROM people;
 INSERT INTO movies (title, show_time) VALUES ('Avengers: Infinity War', '24:00');
 SELECT * FROM movies;
 -- The cinema would like to make the Iron Man movies a triple billing. Find out the show time of "Iron Man 2" and set the show time of "Iron Man 3" to start two hours later.
-UPDATE movies SET show_time = 'Iron Man 3' WHERE show_time = 'Iron Man 2';
+UPDATE movies SET show_time = '20:45' WHERE show_time = 'Iron Man 2';
 SELECT * FROM movies;	
 -- Research how to delete multiple entries from your table in a single command.
+DELETE FROM people WHERE id IN (1, 2, 3);
+SELECT * FROM people;
